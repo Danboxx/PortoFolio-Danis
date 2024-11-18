@@ -72,6 +72,17 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.page-img {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    padding: 30px;
+    border-radius: 8px;
+    
+    
+}
+
 /* Contrôler la taille, la hauteur et l'ajustement de l'image dans son conteneur */
 .project-card img {
     width: 100%;
