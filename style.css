@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Définit la police "Faculty Glyphic" pour tout le contenu de la page. */
+body {
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+/* Style de l'en-tête : couleur de fond */
+header {
+    background-color: #383bf4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* MARGIN 0 signifie aucune marge sur les quatre côtés (haut, droite, bas, gauche) du H1 */
+header h1 {
+    margin: 0;
+}
+
+/* List-style utiliser pour supprimer les puces de la nav dans la liste non ordonnée, 
+PADDING 0 pour SUPPRIMER les espacements dans la ul */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* DISPLAY INLINE: affichage sur la même ligne des éléments, c'est-à-dire qu'ils n'occupent pas toute la largeur des parents et ne forcent pas un retour à la ligne dans la nav
+MARGIN 0 et 15px: ajoute 15px d'espace horizontal (à gauche et à droite) autour de l'élément, mais aucune marge verticale (haut et bas) */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* AGIR sur tout la taille de la police, la couleur sur les a de la nav */
+nav a {
+    color: white;
+    text-decoration: none; /* pour supprimer le soulignement*/
+    font-size: 18px;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-image: url(https://img.freepik.com/photos-premium/fond-pastel-fond-couleur-pastel_882595-93.jpg?w=740);
+}
+
+.intro {
+    text-align: center;
+    
+}
+
+/*em (relative à la taille de la police de l'élément parent */
+.intro h2 {
+    font-size: 2em;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contrôler la taille, la hauteur et l'ajustement de l'image dans son conteneur */
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* L'image couvre complètement l'espace sans se déformer */
+}
+
+/* Contrôler l'espace d'interieur, la marge, la couleur, le fond des H3 de chaque carte */
+.project-card h3 {
+    padding: 15px;
+    margin: 0;
+    background-color: #383bf4;
+    color: white;
+}
+
+/*em (relative à la taille de la police de l'élément parent*/
+.project-card p {
+    padding: 15px;
+    font-size: 1em;
+    color: #333;
+}
+
+.project-card a {
+    padding: 15px;
+    column-gap: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #383bf4;
+    color: white;
+}
+
+/* MARGIN 0 signifie aucune marge sur les quatre côtés (haut, droite, bas, gauche) du FOOTER */
+footer p {
+    margin: 0;
+}
